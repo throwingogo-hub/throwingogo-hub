@@ -2,45 +2,31 @@
 
 # Hey, I'm Throwingogo.
 
-**I build practical tools for faster, calmer workflows.**
+**I build small, practical things that remove friction without taking control away.**
 
-Small permissions. Clear controls. No unnecessary complexity.
-
-[Featured project](#featured-project) · [What I care about](#how-i-build) · [Start a conversation](https://github.com/throwingogo-hub/chatgpt-delagger/discussions)
+[Portfolio](https://throwingogo-hub.github.io/) · [Projects](#projects) · [Start a conversation](https://github.com/throwingogo-hub/chatgpt-delagger/discussions)
 
 </div>
 
-## Featured project
+## Projects
 
-<a href="https://github.com/throwingogo-hub/chatgpt-delagger">
-  <img src="https://raw.githubusercontent.com/throwingogo-hub/chatgpt-delagger/main/docs/images/hero.png" alt="GPT Delagger — long ChatGPT threads without the drag" width="100%">
-</a>
-
-### [GPT Delagger](https://github.com/throwingogo-hub/chatgpt-delagger)
-
-A privacy-first Chrome extension that makes long ChatGPT conversations feel lighter. It reduces off-screen rendering work, reversibly trims old turns, and detaches heavy MCP, connector, and tool-call UI.
-
-- Chrome Manifest V3
-- `storage` permission only
-- Zero dependencies, telemetry, network requests, or remote code
-- Every optimization is reversible
-
-[Install the latest release](https://github.com/throwingogo-hub/chatgpt-delagger/releases/latest) · [Read the source](https://github.com/throwingogo-hub/chatgpt-delagger) · [Report a bug](https://github.com/throwingogo-hub/chatgpt-delagger/issues/new?template=bug_report.yml)
+| | Project | What it does | Try it |
+|---|---|---|---|
+| ⚡ | **[GPT Delagger](https://github.com/throwingogo-hub/chatgpt-delagger)** | Makes very long ChatGPT conversations lighter by skipping off-screen rendering, reversibly hiding old turns, and hiding heavy tool UI. Privacy-first, zero dependencies. | [Install](https://github.com/throwingogo-hub/chatgpt-delagger/releases/latest) |
+| ◉ | **[Senel](https://github.com/throwingogo-hub/senel)** | A constructed language where the sound of a word is derived from its meaning: 559 roots, 65 grammar words, no irregular forms. | [Translate & learn](https://throwingogo-hub.github.io/senel/) |
+| ✦ | **[ShadowPets](https://github.com/throwingogo-hub/DigitalPets)** | Ten reusable pixel-art companions with idle, bounce, and species-specific greeting animations. | [Open Motion Lab](https://throwingogo-hub.github.io/DigitalPets/) |
 
 ## How I build
 
 - **Useful before clever.** The problem and the first-run experience come first.
-- **Trust is a feature.** Minimal permissions and honest limitations beat vague promises.
-- **Small tools should stay small.** I prefer readable source, few moving parts, and no dependency tax.
+- **Trust is a feature.** Small permissions and honest limitations beat vague promises.
+- **Show the working.** Tests, measurements, source files, and tradeoffs stay visible.
+- **Small tools should stay small.** Readable source and few moving parts over dependency tax.
 
-## Current focus
-
-I'm exploring browser performance, thoughtful automation, and utilities that remove friction without taking control away from the user.
-
-If something here saves you time, a star helps other people find it. If it breaks, a focused issue with a reproducible example is even more valuable.
+Everything here is young and actively shaped by real use. If something saves you time or teaches you something, a star helps another person find it. Focused issues and small pull requests are welcome too.
 
 <div align="center">
 
-[GPT Delagger](https://github.com/throwingogo-hub/chatgpt-delagger) · [Discuss ideas](https://github.com/throwingogo-hub/chatgpt-delagger/discussions) · [Browse releases](https://github.com/throwingogo-hub/chatgpt-delagger/releases)
+[Browse the portfolio](https://throwingogo-hub.github.io/) · [GPT Delagger discussions](https://github.com/throwingogo-hub/chatgpt-delagger/discussions)
 
 </div>
