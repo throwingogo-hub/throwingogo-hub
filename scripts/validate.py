@@ -11,6 +11,11 @@ PROJECT_URLS = {
     "https://github.com/throwingogo-hub/senel",
     "https://github.com/throwingogo-hub/DigitalPets",
 }
+DISCUSSION_URLS = {
+    "https://github.com/throwingogo-hub/chatgpt-delagger/discussions/7",
+    "https://github.com/throwingogo-hub/senel/discussions/6",
+    "https://github.com/throwingogo-hub/DigitalPets/discussions/7",
+}
 PORTFOLIO_URL = "https://throwingogo-hub.github.io/throwingogo-hub/"
 
 
@@ -50,6 +55,7 @@ def main() -> None:
     parser.feed(html)
     assert parser.articles == 3
     assert PROJECT_URLS <= parser.links
+    assert DISCUSSION_URLS <= parser.links
     for key in ("description", "og:title", "og:description", "og:image", "twitter:card"):
         assert parser.meta.get(key), f"missing {key}"
     assert parser.meta["og:url"] == PORTFOLIO_URL
