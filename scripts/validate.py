@@ -45,19 +45,27 @@ def main() -> None:
     assert all(url in readme for url in PROJECT_URLS)
     assert PORTFOLIO_URL in readme
 
+    html = (ROOT / "index.html").read_text()
     parser = PageParser()
-    parser.feed((ROOT / "index.html").read_text())
+    parser.feed(html)
     assert parser.articles == 3
     assert PROJECT_URLS <= parser.links
     for key in ("description", "og:title", "og:description", "og:image", "twitter:card"):
         assert parser.meta.get(key), f"missing {key}"
     assert parser.meta["og:url"] == PORTFOLIO_URL
     assert parser.meta["og:image"].startswith(PORTFOLIO_URL)
+    assert parser.meta["robots"] == "index, follow"
+    assert '"@type": "ProfilePage"' in html
+
+    robots = (ROOT / "robots.txt").read_text()
+    sitemap = (ROOT / "sitemap.xml").read_text()
+    assert f"Sitemap: {PORTFOLIO_URL}sitemap.xml" in robots
+    assert f"<loc>{PORTFOLIO_URL}</loc>" in sitemap
 
     preview = ROOT / "assets/social-preview.png"
     assert png_size(preview) == (1280, 640)
     assert preview.stat().st_size < 1_000_000
-    print("PASS: profile README, 3 project cards, sharing metadata, 1280x640 preview")
+    print("PASS: profile README, 3 project cards, structured discovery metadata, 1280x640 preview")
 
 
 if __name__ == "__main__":
