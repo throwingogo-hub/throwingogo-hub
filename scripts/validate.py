@@ -11,6 +11,7 @@ PROJECT_URLS = {
     "https://github.com/throwingogo-hub/senel",
     "https://github.com/throwingogo-hub/DigitalPets",
 }
+PORTFOLIO_URL = "https://throwingogo-hub.github.io/throwingogo-hub/"
 
 
 class PageParser(HTMLParser):
@@ -42,6 +43,7 @@ def main() -> None:
     readme = (ROOT / "README.md").read_text()
     assert "detaches heavy" not in readme.lower()
     assert all(url in readme for url in PROJECT_URLS)
+    assert PORTFOLIO_URL in readme
 
     parser = PageParser()
     parser.feed((ROOT / "index.html").read_text())
@@ -49,6 +51,8 @@ def main() -> None:
     assert PROJECT_URLS <= parser.links
     for key in ("description", "og:title", "og:description", "og:image", "twitter:card"):
         assert parser.meta.get(key), f"missing {key}"
+    assert parser.meta["og:url"] == PORTFOLIO_URL
+    assert parser.meta["og:image"].startswith(PORTFOLIO_URL)
 
     preview = ROOT / "assets/social-preview.png"
     assert png_size(preview) == (1280, 640)
