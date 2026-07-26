@@ -4,7 +4,7 @@
 
 **I build small, practical things that remove friction without taking control away.**
 
-[Portfolio](https://throwingogo-hub.github.io/) · [Projects](#projects) · [Start a conversation](https://github.com/throwingogo-hub/chatgpt-delagger/discussions)
+[Portfolio](https://throwingogo-hub.github.io/throwingogo-hub/) · [Projects](#projects) · [Start a conversation](https://github.com/throwingogo-hub/chatgpt-delagger/discussions)
 
 </div>
 
@@ -27,6 +27,6 @@ Everything here is young and actively shaped by real use. If something saves you
 
 <div align="center">
 
-[Browse the portfolio](https://throwingogo-hub.github.io/) · [GPT Delagger discussions](https://github.com/throwingogo-hub/chatgpt-delagger/discussions)
+[Browse the portfolio](https://throwingogo-hub.github.io/throwingogo-hub/) · [GPT Delagger discussions](https://github.com/throwingogo-hub/chatgpt-delagger/discussions)
 
 </div>
